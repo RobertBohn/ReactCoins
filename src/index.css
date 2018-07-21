@@ -1,0 +1,113 @@
+/* Global CSS */
+body {
+  font-family: arial, verdana, sans-serif;
+  color:#000000;
+  margin:0;
+  padding:0;
+}
+h1 {
+  font-size:14pt;
+}
+h2 {
+  font-size:18pt;
+}
+p {
+  font-size:12pt;
+}
+a {
+  color:#000000;
+  text-decoration:none;
+}
+a:hover {
+  color:#484848;
+}
+
+/* Start of Column CSS */
+#content {
+  width: 1200px;
+  margin: auto;
+}
+#container2 {
+  clear:left;
+  float:left;
+  width:100%;
+  overflow:hidden;
+  background:#e8e8e8; /* column 2 background colour */
+}
+#container1 {
+  float:left;
+  width:100%;
+  position:relative;
+  right:70%;
+  min-height:1100px;
+  background:#3c9ccc; /* column 1 background colour */
+}
+#col1 {
+  float:left;
+  width:26%;
+  position:relative;
+  left:72%;
+  overflow:hidden;
+}
+#col2 {
+  float:left;
+  width:66%;
+  position:relative;
+  left:76%;
+  overflow:hidden;
+}
+
+/* Content CSS */
+#col1 h1 {
+  margin-top:40px;
+}
+#col1 ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+#col2 h2 {
+  text-align:center;
+}
+#basic {
+  margin-top:30px;
+  margin-left:20px;
+}
+#basic img {
+  height:350px;
+  cursor:pointer;
+}
+#description {
+  text-align:justify;
+}
+#notes {
+  font-style:italic;
+  text-align:justify;
+}
+#purchase {
+  padding-bottom:10px;
+}
+#obverse {
+  margin-top:30px;
+  margin-left:10px;
+  height:700px;
+  cursor:pointer;
+}
+#reverse {
+  margin-top:30px;
+  margin-left:10px;
+  height:700px;
+  cursor:pointer;
+}
+#obverse_slab {
+  margin-top:10px;
+  margin-left:20px;
+  width:700px;
+  cursor:pointer;
+}
+#reverse_slab {
+  margin-top:10px;
+  margin-left:20px;
+  width:700px;
+  cursor:pointer;
+}
