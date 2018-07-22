@@ -27,24 +27,24 @@ class Detail extends React.Component {
               <h2 id="title">{coin.title}</h2>
               <p id="description">{coin.description}</p>
               <p id="notes">{coin.notes}</p>
-              <a id="certified" onClick={() => this.changeView(3)}>{coin.certified}</a>
+              <a id="certified" class="pointer" onClick={() => this.changeView(3)}>{coin.certified}</a>
             </div>
           );
         case 1:
           return (
-            <img id="small_obv" alt="" src={coin.obverse} onClick={() => this.changeView(0)} />
+            <img id="small_obv" class="pointer" alt="" src={coin.obverse} onClick={() => this.changeView(0)} />
           );
         case 2:
           return (
-            <img id="small_rev" alt="" src={coin.reverse} onClick={() => this.changeView(0)} />
+            <img id="small_rev" class="pointer" alt="" src={coin.reverse} onClick={() => this.changeView(0)} />
           );
         case 3:
           return (
-            <img id="obverse_slab" alt="" src={coin.slab_obverse} onClick={() => this.changeView(4)} />
+            <img id="obverse_slab" class="pointer" alt="" src={coin.slab_obverse} onClick={() => this.changeView(4)} />
           );
         case 4:
           return (
-            <img id="reverse_slab" alt="" src={coin.slab_reverse} onClick={() => this.changeView(0)} />
+            <img id="reverse_slab" class="pointer" alt="" src={coin.slab_reverse} onClick={() => this.changeView(0)} />
           );
         default:
           return ("");
@@ -66,7 +66,7 @@ class MenuHeading extends React.Component {
 class MenuItem extends React.Component {
   render(props) {
     return(
-      <a onClick={() => this.props.app.setState({id: this.props.coin.id, view: 0})}>{this.props.coin.menu}</a>
+      <a class="pointer" onClick={() => this.props.app.setState({id: this.props.coin.id, view: 0})}>{this.props.coin.menu}</a>
     );
   }
 }
@@ -77,9 +77,7 @@ class MenuSet extends React.Component {
       this.props.data.map((coin, idx) => {
         if (this.props.data[idx].type === this.props.heading) {
           return (
-            <li>
-              <MenuItem coin={this.props.data[idx]} app={this.props.app} />
-            </li>
+            <li><MenuItem coin={this.props.data[idx]} app={this.props.app} /></li>
           );
         } else {
           return("");

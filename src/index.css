@@ -21,7 +21,9 @@ a {
 a:hover {
   color:#484848;
 }
-
+.pointer {
+  cursor:pointer;
+}
 /* Start of Column CSS */
 #content {
   width: 1200px;
